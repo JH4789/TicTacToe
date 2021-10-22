@@ -173,14 +173,14 @@ int main() {
 	running = false;
       }
     }
-  }
-  
-  
+  } 
 }
+//Print board function
+//This could probably be optimized using for loops
 void printBoard(struct boardstate newboard) {
     cout << "  a b c\n";
     cout << "1 ";
-    
+    //Code checks the int array line by line and prints accordingly
     for(int m = 0 ; m < 3 ; m++) {
        if(newboard.tictactoeboard[0][m] == 0) {
 	 cout << "t ";
@@ -218,7 +218,9 @@ void printBoard(struct boardstate newboard) {
       }
     cout << endl;
   }
+//Checking for win
 bool checkWin(struct boardstate newboard) {
+  //Going through every case 
   for(int i = 1; i <3 ; i++) {
     //Diagonals
     if(newboard.tictactoeboard[0][0] == i && newboard.tictactoeboard[1][1] == i && newboard.tictactoeboard[2][2] == i){
