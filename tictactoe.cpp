@@ -183,7 +183,7 @@ void printBoard(struct boardstate newboard) {
     //Code checks the int array line by line and prints accordingly
     for(int m = 0 ; m < 3 ; m++) {
        if(newboard.tictactoeboard[0][m] == 0) {
-	 cout << "t ";
+	 cout << "  ";
 	}
        if(newboard.tictactoeboard[0][m] == 1) {
 	 cout << "o ";
@@ -195,7 +195,7 @@ void printBoard(struct boardstate newboard) {
     cout << "\n2 ";
     for(int f = 0 ; f < 3 ; f++) {
        if(newboard.tictactoeboard[1][f] == 0) {
-	 cout << "t ";
+	 cout << "  ";
 	}
        if(newboard.tictactoeboard[1][f] == 1) {
 	 cout << "o ";
@@ -207,7 +207,7 @@ void printBoard(struct boardstate newboard) {
     cout << "\n3 ";
     for(int d = 0 ; d < 3 ; d++) {
        if(newboard.tictactoeboard[2][d] == 0) {
-	 cout << "t ";
+	 cout << "  ";
 	}
        if(newboard.tictactoeboard[2][d] == 1) {
 	 cout << "o ";
